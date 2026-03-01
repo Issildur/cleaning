@@ -42,11 +42,12 @@ a{color:inherit}
   padding:4px 6px;border-radius:8px;
   border:1px solid transparent;
   background:transparent;
-  font-size:20px;line-height:1;
   cursor:pointer;
   opacity:.55;
   transition:opacity .15s, background .15s, border-color .15s;
+  display:inline-flex;align-items:center;
 }
+.lang-btn img{display:block;border-radius:2px;}
 .lang-btn:hover{
   opacity:.85;
   background:rgba(255,255,255,.07);
