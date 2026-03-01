@@ -81,7 +81,7 @@ const TRANSLATIONS = {
             "Czyszczenie szklanych i lustrzanych powierzchni",
             "Odkurzanie wszystkich dostępnych powierzchni",
             "Mycie podłóg",
-            "Mycie armatury (wanna lub prysznic, toaleta, bidet, umywalka)",
+            "Mycie łazienki (wanna lub prysznic, toaleta, bidet, umywalka)",
             "Czyszczenie szafek z zewnątrz",
             "Czyszczenie drzwi z kurzu i zabrudzeń",
             "Staranne składanie rzeczy",
@@ -95,7 +95,7 @@ const TRANSLATIONS = {
             "Usuwanie kurzu ze wszystkich dostępnych miejsc",
             "Odkurzanie, w tym pod łóżkiem, kanapą i szafą",
             "Mycie podłóg we wszystkich dostępnych miejscach",
-            "Mycie armatury, usuwanie pleśni i grzyba",
+            "Mycie łazienki, usuwanie pleśni i grzyba",
             "Mycie sprzętu AGD: lodówka, mikrofalówka, płyta, piekarnik, okap",
             "Czyszczenie drzwi i kaloryferów",
             "Składanie ubrań, słanie łóżka (przy dostępności czystej pościeli)",
@@ -120,7 +120,7 @@ const TRANSLATIONS = {
             { "label": "2-osobowa", "price": "140 PLN" },
             { "label": "3-osobowa", "price": "160 PLN" },
             { "label": "4-osobowa", "price": "180 PLN" },
-            { "label": "5–6-osobowa", "price": "220 PLN" }
+            { "label": "5–6-osobowa", "price": "od 220 PLN" }
           ]
         },
         {
@@ -320,7 +320,7 @@ const TRANSLATIONS = {
             { "label": "2-місний", "price": "140 PLN" },
             { "label": "3-місний", "price": "160 PLN" },
             { "label": "4-місний", "price": "180 PLN" },
-            { "label": "5–6-місний", "price": "220 PLN" }
+            { "label": "5–6-місний", "price": "від 220 PLN" }
           ]
         },
         {
@@ -520,7 +520,7 @@ const TRANSLATIONS = {
             { "label": "2-местный", "price": "140 PLN" },
             { "label": "3-местный", "price": "160 PLN" },
             { "label": "4-местный", "price": "180 PLN" },
-            { "label": "5–6-местный", "price": "220 PLN" }
+            { "label": "5–6-местный", "price": "от 220 PLN" }
           ]
         },
         {
