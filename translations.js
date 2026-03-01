@@ -5,7 +5,7 @@ const TRANSLATIONS = {
   // ── POLISH (default) ──────────────────────────────────────────────────────
   "pl": {
     "meta": {
-      "title": "Him Clean Warszawa | Sprzątanie mieszkań i pranie tapicerki",
+      "title": "Urban Clean Warszawa | Sprzątanie mieszkań i pranie tapicerki",
       "description": "Profesjonalne sprzątanie mieszkań i pranie tapicerki w Warszawie. Kanapy, materace, dywany, fotele. Dojazd do klienta. Zadzwoń!"
     },
     "nav": {
@@ -197,7 +197,7 @@ const TRANSLATIONS = {
       "subtitle": "W celu wyceny i umówienia się skontaktuj się z nami w dowolny wygodny sposób."
     },
     "footer": {
-      "brand": "Him Clean Warszawa",
+      "brand": "Urban Clean Warszawa",
       "backToTop": "Na górę ↑"
     }
   },
