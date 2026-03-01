@@ -96,7 +96,7 @@ const TRANSLATIONS = {
             "Odkurzanie, w tym pod łóżkiem, kanapą i szafą",
             "Mycie podłóg we wszystkich dostępnych miejscach",
             "Mycie łazienki, usuwanie pleśni i grzyba",
-            "Mycie sprzętu AGD: lodówka, mikrofalówka, płyta, piekarnik, okap",
+            "Mycie sprzętu AGD: lodówka, mikrofalówka, kuchenka, piekarnik, okap",
             "Czyszczenie drzwi i kaloryferów",
             "Składanie ubrań, słanie łóżka (przy dostępności czystej pościeli)",
             "1 pranie",
