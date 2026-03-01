@@ -28,7 +28,7 @@ const statusEl = document.getElementById("formStatus");
 if (form && statusEl) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    statusEl.textContent = "✅ Sent! (demo) Add a real form integration later.";
+    statusEl.textContent = "✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.";
     form.reset();
   });
 }

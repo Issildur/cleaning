@@ -1,31 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Basic SEO (edit later) -->
-  <title>Furniture & Upholstery Dry Cleaning | Timur</title>
-  <meta name="description" content="Professional furniture dry cleaning. Sofas, mattresses, chairs. On-site service. Call or message to book." />
+  <title>Химчистка Варшава | Уборка квартир и химчистка мебели</title>
+  <meta name="description" content="Профессиональная уборка квартир и химчистка мебели в Варшаве. Диваны, матрасы, ковры, кресла. Выезд на дом. Звоните!" />
   <link rel="canonical" href="https://example.com/" />
 
-  <!-- Social preview (optional) -->
-  <meta property="og:title" content="Furniture Dry Cleaning | Timur" />
-  <meta property="og:description" content="Sofa, mattress, chair cleaning. On-site service." />
+  <meta property="og:title" content="Химчистка Варшава" />
+  <meta property="og:description" content="Уборка квартир и химчистка мебели в Варшаве. Диваны, матрасы, ковры." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://example.com/" />
 
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Local business schema (edit later: name, city, phone, etc.) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Timur Furniture Dry Cleaning",
-    "description": "Furniture & upholstery dry cleaning service.",
+    "name": "Химчистка Варшава",
+    "description": "Профессиональная уборка квартир и химчистка мебели в Варшаве.",
     "telephone": "+48 000 000 000",
-    "areaServed": "Your city",
+    "areaServed": "Варшава",
     "url": "https://example.com/",
     "sameAs": []
   }
@@ -35,192 +32,310 @@
 <body>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__dot"></span>
-        <span>Timur</span>
+      <a class="brand" href="#top" aria-label="На главную">
+        <img src="logo.PNG" alt="Химчистка Варшава" class="brand__logo" />
       </a>
 
-      <nav class="menu" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#prices">Prices</a>
-        <a href="#before-after">Before/After</a>
+      <nav class="menu" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#before-after">До/После</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn--small" href="#contact">Book</a>
+        <a class="btn btn--small" href="#contact">Заказать</a>
       </nav>
 
-      <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="top">
+
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="pill">On-site service • Safe products • Fast drying</p>
-          <h1>Furniture & Upholstery Dry Cleaning</h1>
+          <p class="pill">Выезд на дом&nbsp;• Безопасные средства&nbsp;• Быстрое высыхание</p>
+          <h1>Уборка квартир и химчистка мебели в Варшаве</h1>
           <p class="lead">
-            Sofa, mattress, chair, and car seat cleaning. Book in 1 minute — I come to you.
+            Диваны, матрасы, ковры, кресла и полный клининг вашего дома.
+            Запишитесь за 1 минуту — приедем к вам.
           </p>
 
           <div class="cta">
-            <a class="btn" href="tel:+48000000000">Call</a>
-            <a class="btn btn--ghost" href="#contact">Message</a>
+            <a class="btn" href="tel:+48000000000">Позвонить</a>
+            <a class="btn btn--ghost" href="#contact">Написать</a>
           </div>
 
-          <div class="trust">
-            <div class="trust__item">
-              <strong>⭐ 4.9</strong><span>rating</span>
-            </div>
-            <div class="trust__item">
-              <strong>500+</strong><span>jobs done</span>
-            </div>
-            <div class="trust__item">
-              <strong>24h</strong><span>quick booking</span>
-            </div>
-          </div>
         </div>
 
         <div class="hero__card">
-          <div class="hero__img" role="img" aria-label="Placeholder image"></div>
-          <div class="hero__note">
-            Replace this with a real “before/after” photo later — it boosts conversions.
+          <div class="ba-split">
+            <div class="ba-split__item">
+              <img src="img/before1.jpg" alt="До чистки" />
+              <span class="ba-label">До</span>
+            </div>
+            <div class="ba-split__item">
+              <img src="img/after1.jpg" alt="После чистки" />
+              <span class="ba-label ba-label--after">После</span>
+            </div>
           </div>
         </div>
       </div>
       <div class="hero__bg"></div>
     </section>
 
+    <!-- УСЛУГИ -->
     <section id="services" class="section">
       <div class="container">
-        <h2>Services</h2>
-        <p class="muted">Edit these later — structure is ready.</p>
+        <h2>Услуги</h2>
+        <p class="muted">Профессиональная уборка и химчистка с выездом на дом в Варшаве</p>
 
         <div class="cards">
           <article class="card">
-            <h3>Sofa cleaning</h3>
-            <p>Deep extraction, stain removal, deodorizing.</p>
+            <span class="card__icon">🏠</span>
+            <h3>Поддерживающая уборка</h3>
+            <p>Регулярное поддержание чистоты: пыль, полы, сантехника, вынос мусора.</p>
+            <p class="card__price">от 200 PLN</p>
           </article>
           <article class="card">
-            <h3>Mattress cleaning</h3>
-            <p>Dust, sweat, stains — hygienic deep clean.</p>
+            <span class="card__icon">✨</span>
+            <h3>Генеральная уборка</h3>
+            <p>Глубокая очистка всего помещения, включая бытовую технику и труднодоступные места.</p>
+            <p class="card__price">от 350 PLN</p>
           </article>
           <article class="card">
-            <h3>Chairs & armchairs</h3>
-            <p>Fabric & upholstery refresh.</p>
+            <span class="card__icon">🔨</span>
+            <h3>После ремонта</h3>
+            <p>Удаление строительной пыли и загрязнений после ремонтных или строительных работ.</p>
+            <p class="card__price">от 12,5 PLN / м²</p>
           </article>
           <article class="card">
-            <h3>Car seats</h3>
-            <p>Interior spots and odors treatment.</p>
+            <span class="card__icon">🛋️</span>
+            <h3>Химчистка мебели</h3>
+            <p>Диваны, матрасы, ковры, кресла и стулья. Профессиональное оборудование.</p>
+            <p class="card__price">от 40 PLN</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- КАК МЫ РАБОТАЕМ -->
     <section class="section section--alt">
       <div class="container">
-        <h2>How it works</h2>
+        <h2>Как мы работаем</h2>
         <div class="steps">
-          <div class="step"><span class="step__num">1</span><h3>Book</h3><p>Call or message. Send a photo if you want.</p></div>
-          <div class="step"><span class="step__num">2</span><h3>I arrive</h3><p>On-site, with professional equipment.</p></div>
-          <div class="step"><span class="step__num">3</span><h3>Clean & dry</h3><p>Deep clean + fresh smell. Drying time depends on fabric.</p></div>
+          <div class="step">
+            <span class="step__num">1</span>
+            <h3>Свяжитесь с нами</h3>
+            <p>Позвоните или напишите. При необходимости пришлите фото.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">2</span>
+            <h3>Мы приедем к вам</h3>
+            <p>Выезд на дом с профессиональным оборудованием и безопасными средствами.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">3</span>
+            <h3>Чистота готова</h3>
+            <p>Глубокая чистка и свежий запах. Время высыхания зависит от ткани и вентиляции.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ЦЕНЫ -->
     <section id="prices" class="section">
       <div class="container">
-        <h2>Prices</h2>
-        <p class="muted">Put real numbers later. This block is SEO-friendly and clear.</p>
+        <h2>Цены</h2>
 
+        <h3 class="prices-subhead">Уборка квартир и домов</h3>
         <div class="pricegrid">
+
           <div class="price">
-            <h3>Sofa</h3>
-            <p class="price__value">from 200 zł</p>
-            <p class="muted">Depends on size & fabric</p>
+            <h3>Поддерживающая уборка</h3>
+            <p class="price__value">от 200 PLN</p>
+            <details>
+              <summary>Что входит</summary>
+              <ul class="price__list">
+                <li>Удаление пыли в доступных местах (полки, рамки, розетки, плинтусы, техника, мебель)</li>
+                <li>Очистка стеклянных и зеркальных поверхностей</li>
+                <li>Пылесос всех доступных поверхностей</li>
+                <li>Мытьё пола</li>
+                <li>Мытьё сантехники (ванна или душ, унитаз, биде, раковина)</li>
+                <li>Очистка шкафчиков с внешней стороны</li>
+                <li>Очистка дверей от пыли и загрязнений</li>
+                <li>Аккуратное складывание вещей</li>
+                <li>Вынос мусора и установка новых мешков</li>
+              </ul>
+            </details>
           </div>
+
           <div class="price">
-            <h3>Mattress</h3>
-            <p class="price__value">from 120 zł</p>
-            <p class="muted">One side / both sides</p>
+            <h3>Генеральная уборка</h3>
+            <p class="price__value">от 350 PLN</p>
+            <details>
+              <summary>Что входит</summary>
+              <ul class="price__list">
+                <li>Удаление пыли во всех доступных местах</li>
+                <li>Пылесос, включая под кроватью, диваном и шкафом</li>
+                <li>Мытьё пола во всех доступных местах</li>
+                <li>Мытьё сантехники, удаление плесени и грибка</li>
+                <li>Мытьё кухонной техники: холодильник, микроволновка, плита, духовка, вытяжка</li>
+                <li>Очистка дверей и батарей</li>
+                <li>Складывание вещей, застилание постели (при наличии чистого белья)</li>
+                <li>1 стирка</li>
+                <li>Химчистка 1 дивана и 1 ковра</li>
+                <li>Вынос мусора и установка новых мешков</li>
+              </ul>
+            </details>
+            <p class="price__note">Отдельные пункты можно исключить по желанию. Стоимость остаётся фиксированной.</p>
           </div>
+
           <div class="price">
-            <h3>Armchair</h3>
-            <p class="price__value">from 80 zł</p>
-            <p class="muted">Standard sizes</p>
+            <h3>После ремонта</h3>
+            <p class="price__value">12,5 PLN / м²</p>
+            <p class="muted">Удаление строительной пыли, очистка всех доступных поверхностей, пола, сантехники и кухни.</p>
+            <p class="price__note">Итоговая стоимость зависит от площади и степени загрязнения.</p>
           </div>
+
+        </div>
+
+        <h3 class="prices-subhead">Химчистка мебели и текстиля</h3>
+        <div class="pricegrid pricegrid--4">
+
+          <div class="price">
+            <h3>Диваны</h3>
+            <ul class="price__list">
+              <li>2-местный — <strong>140 PLN</strong></li>
+              <li>3-местный — <strong>160 PLN</strong></li>
+              <li>4-местный — <strong>180 PLN</strong></li>
+              <li>5–6-местный — <strong>220 PLN</strong></li>
+            </ul>
+          </div>
+
+          <div class="price">
+            <h3>Матрасы <span class="price__sub">одна сторона</span></h3>
+            <ul class="price__list">
+              <li>Односпальный — <strong>130 PLN</strong></li>
+              <li>Двуспальный — <strong>230 PLN</strong></li>
+            </ul>
+          </div>
+
+          <div class="price">
+            <h3>Ковры</h3>
+            <ul class="price__list">
+              <li>Ковёр — <strong>13 PLN / м²</strong></li>
+              <li>Ковролин — <strong>12 PLN / м²</strong></li>
+            </ul>
+          </div>
+
+          <div class="price">
+            <h3>Другая мебель</h3>
+            <ul class="price__list">
+              <li>Кресло — <strong>55 PLN</strong></li>
+              <li>Стул — <strong>40 PLN</strong></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ДО / ПОСЛЕ -->
     <section id="before-after" class="section section--alt">
       <div class="container">
-        <h2>Before / After</h2>
-        <p class="muted">Replace placeholders with real photos later.</p>
+        <h2>До / После</h2>
+        <p class="muted">Реальные результаты нашей работы.</p>
 
-        <div class="gallery">
-          <div class="ph" aria-label="Before after placeholder 1"></div>
-          <div class="ph" aria-label="Before after placeholder 2"></div>
-          <div class="ph" aria-label="Before after placeholder 3"></div>
-          <div class="ph" aria-label="Before after placeholder 4"></div>
+        <div class="gallery gallery--ba">
+          <div class="ba-card">
+            <img src="img/before1.jpg" alt="До чистки" />
+            <span class="ba-label">До</span>
+          </div>
+          <div class="ba-card">
+            <img src="img/after1.jpg" alt="После чистки" />
+            <span class="ba-label ba-label--after">После</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section">
+    <!-- ВАЖНАЯ ИНФОРМАЦИЯ -->
+    <section class="section">
       <div class="container">
-        <h2>FAQ</h2>
+        <h2>Важная информация</h2>
+        <div class="info-grid">
+          <div class="info-item info-item--ok">Работаем с профессиональным оборудованием</div>
+          <div class="info-item info-item--ok">Используем безопасные и эффективные чистящие средства</div>
+          <div class="info-item info-item--warn">Тяжёлая мебель не перемещается</div>
+          <div class="info-item info-item--warn">С натуральными материалами не работаем</div>
+          <div class="info-item info-item--note">Итоговая стоимость может зависеть от степени загрязнения и площади</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <h2>Частые вопросы</h2>
 
         <div class="faq">
           <details>
-            <summary>How long does it take?</summary>
-            <p>Usually 1–2 hours depending on furniture size and stains.</p>
+            <summary>Сколько времени занимает уборка?</summary>
+            <p>Зависит от объёма работ и степени загрязнения. Поддерживающая уборка — обычно 2–3 часа, генеральная — от 4 часов.</p>
           </details>
           <details>
-            <summary>Is it safe for kids/pets?</summary>
-            <p>Yes — professional products, properly rinsed and extracted.</p>
+            <summary>Безопасно ли это для детей и домашних животных?</summary>
+            <p>Да — мы используем профессиональные средства, которые безопасны после полного высыхания.</p>
           </details>
           <details>
-            <summary>How long until it’s dry?</summary>
-            <p>Often a few hours. Depends on fabric and ventilation.</p>
+            <summary>Сколько сохнет мебель после химчистки?</summary>
+            <p>Обычно несколько часов. Зависит от ткани и вентиляции помещения.</p>
+          </details>
+          <details>
+            <summary>Нужно ли что-то подготавливать заранее?</summary>
+            <p>Достаточно убрать мелкие ценные предметы. Всё остальное мы сделаем сами.</p>
+          </details>
+          <details>
+            <summary>Как рассчитать стоимость уборки?</summary>
+            <p>Свяжитесь с нами любым удобным способом — рассчитаем стоимость индивидуально в зависимости от площади, типа уборки и степени загрязнения.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section section--alt">
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="section">
       <div class="container contact">
         <div>
-          <h2>Contact / Booking</h2>
-          <p class="muted">Put Timur’s real phone + messengers later.</p>
+          <h2>Записаться / Связаться</h2>
+          <p class="muted">Для расчёта стоимости и записи свяжитесь с нами любым удобным способом.</p>
 
           <div class="contact__buttons">
-            <a class="btn" href="tel:+48000000000">Call: +48 000 000 000</a>
+            <a class="btn" href="tel:+48000000000">Позвонить: +48 000 000 000</a>
             <a class="btn btn--ghost" href="https://wa.me/48000000000" target="_blank" rel="noreferrer">WhatsApp</a>
             <a class="btn btn--ghost" href="https://t.me/username" target="_blank" rel="noreferrer">Telegram</a>
           </div>
 
-          <p class="small muted">
-            Working hours: Mon–Sat 9:00–19:00 (edit later)
-          </p>
+          <p class="small muted">Режим работы: Пн–Сб 9:00–19:00</p>
         </div>
 
         <form class="form" id="leadForm">
           <label>
-            Your name
-            <input name="name" placeholder="John" autocomplete="name" />
+            Ваше имя
+            <input name="name" placeholder="Иван" autocomplete="name" />
           </label>
           <label>
-            Phone / Messenger
+            Телефон / Мессенджер
             <input name="contact" placeholder="+48..." autocomplete="tel" />
           </label>
           <label>
-            What needs cleaning?
-            <textarea name="message" placeholder="Sofa 3-seater, stain on armrest..."></textarea>
+            Что нужно почистить?
+            <textarea name="message" placeholder="Диван 3-местный, пятно на подлокотнике..."></textarea>
           </label>
-          <button class="btn" type="submit">Send request</button>
-          <p class="small muted">This demo form just shows a success message (no backend).</p>
+          <button class="btn" type="submit">Отправить заявку</button>
           <p class="small" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -228,12 +343,11 @@
 
     <footer class="footer">
       <div class="container footer__grid">
-        <p>© <span id="year"></span> Timur Furniture Dry Cleaning</p>
-        <p class="muted">
-          Made with ❤️ — <a href="#top">Back to top</a>
-        </p>
+        <p>© <span id="year"></span> Химчистка Варшава</p>
+        <p class="muted"><a href="#top">Наверх ↑</a></p>
       </div>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
