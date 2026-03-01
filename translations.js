@@ -1,3 +1,5 @@
+const _fmt = n => String(n).replace('.', ',');
+
 const TRANSLATIONS = {
 
   // ── POLISH (default) ──────────────────────────────────────────────────────
@@ -32,22 +34,22 @@ const TRANSLATIONS = {
         {
           "title": "Sprzątanie bieżące",
           "text": "Regularne utrzymanie czystości: kurz, podłogi, łazienka, wynoszenie śmieci.",
-          "price": "od 200 PLN"
+          "price": `od ${PRICES.regularCleaning} PLN`
         },
         {
           "title": "Generalne sprzątanie",
           "text": "Gruntowne czyszczenie całego mieszkania, w tym sprzętu AGD i trudno dostępnych miejsc.",
-          "price": "od 350 PLN"
+          "price": `od ${PRICES.deepCleaning} PLN`
         },
         {
           "title": "Po remoncie",
           "text": "Usuwanie pyłu budowlanego i zanieczyszczeń po pracach remontowych lub budowlanych.",
-          "price": "od 12,5 PLN / m²"
+          "price": `od ${_fmt(PRICES.afterRenovation)} PLN / m²`
         },
         {
           "title": "Pranie tapicerki",
           "text": "Kanapy, materace, dywany, fotele i krzesła. Profesjonalny sprzęt.",
-          "price": "od 40 PLN"
+          "price": `od ${PRICES.chair} PLN`
         }
       ]
     },
@@ -75,7 +77,7 @@ const TRANSLATIONS = {
       "cleaning": [
         {
           "title": "Sprzątanie bieżące",
-          "value": "od 200 PLN",
+          "value": `od ${PRICES.regularCleaning} PLN`,
           "items": [
             "Usuwanie kurzu z dostępnych miejsc (półki, ramki, gniazdka, listwy, sprzęt, meble)",
             "Czyszczenie szklanych i lustrzanych powierzchni",
@@ -90,7 +92,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "Generalne sprzątanie",
-          "value": "od 350 PLN",
+          "value": `od ${PRICES.deepCleaning} PLN`,
           "items": [
             "Usuwanie kurzu ze wszystkich dostępnych miejsc",
             "Odkurzanie, w tym pod łóżkiem, kanapą i szafą",
@@ -107,7 +109,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "Po remoncie",
-          "value": "12,5 PLN / m²",
+          "value": `${_fmt(PRICES.afterRenovation)} PLN / m²`,
           "desc": "Usuwanie pyłu budowlanego, czyszczenie wszystkich dostępnych powierzchni, podłóg, łazienki i kuchni.",
           "note": "Ostateczna cena zależy od powierzchni i stopnia zabrudzenia."
         }
@@ -117,32 +119,32 @@ const TRANSLATIONS = {
         {
           "title": "Kanapy",
           "items": [
-            { "label": "2-osobowa", "price": "140 PLN" },
-            { "label": "3-osobowa", "price": "160 PLN" },
-            { "label": "4-osobowa", "price": "180 PLN" },
-            { "label": "5–6-osobowa", "price": "od 220 PLN" }
+            { "label": "2-osobowa",   "price": `${PRICES.sofa2} PLN` },
+            { "label": "3-osobowa",   "price": `${PRICES.sofa3} PLN` },
+            { "label": "4-osobowa",   "price": `${PRICES.sofa4} PLN` },
+            { "label": "5–6-osobowa", "price": `od ${PRICES.sofa56} PLN` }
           ]
         },
         {
           "title": "Materace",
           "sub": "jedna strona",
           "items": [
-            { "label": "Jednoosobowy", "price": "130 PLN" },
-            { "label": "Dwuosobowy", "price": "230 PLN" }
+            { "label": "Jednoosobowy", "price": `${PRICES.mattressSingle} PLN` },
+            { "label": "Dwuosobowy",   "price": `${PRICES.mattressDouble} PLN` }
           ]
         },
         {
           "title": "Dywany",
           "items": [
-            { "label": "Dywan", "price": "13 PLN / m²" },
-            { "label": "Wykładzina", "price": "12 PLN / m²" }
+            { "label": "Dywan",      "price": `${PRICES.carpet} PLN / m²` },
+            { "label": "Wykładzina", "price": `${PRICES.carpeting} PLN / m²` }
           ]
         },
         {
           "title": "Inne meble",
           "items": [
-            { "label": "Fotel", "price": "55 PLN" },
-            { "label": "Krzesło", "price": "40 PLN" }
+            { "label": "Fotel",   "price": `${PRICES.armchair} PLN` },
+            { "label": "Krzesło", "price": `${PRICES.chair} PLN` }
           ]
         }
       ]
@@ -232,22 +234,22 @@ const TRANSLATIONS = {
         {
           "title": "Підтримуюче прибирання",
           "text": "Регулярне підтримання чистоти: пил, підлоги, сантехніка, вивіз сміття.",
-          "price": "від 200 PLN"
+          "price": `від ${PRICES.regularCleaning} PLN`
         },
         {
           "title": "Генеральне прибирання",
           "text": "Глибоке очищення всього приміщення, включно з побутовою технікою та важкодоступними місцями.",
-          "price": "від 350 PLN"
+          "price": `від ${PRICES.deepCleaning} PLN`
         },
         {
           "title": "Після ремонту",
           "text": "Видалення будівельного пилу та забруднень після ремонтних або будівельних робіт.",
-          "price": "від 12,5 PLN / м²"
+          "price": `від ${_fmt(PRICES.afterRenovation)} PLN / м²`
         },
         {
           "title": "Хімчистка меблів",
           "text": "Дивани, матраци, килими, крісла та стільці. Професійне обладнання.",
-          "price": "від 40 PLN"
+          "price": `від ${PRICES.chair} PLN`
         }
       ]
     },
@@ -275,7 +277,7 @@ const TRANSLATIONS = {
       "cleaning": [
         {
           "title": "Підтримуюче прибирання",
-          "value": "від 200 PLN",
+          "value": `від ${PRICES.regularCleaning} PLN`,
           "items": [
             "Видалення пилу в доступних місцях (полиці, рамки, розетки, плінтуси, техніка, меблі)",
             "Очищення скляних та дзеркальних поверхонь",
@@ -290,7 +292,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "Генеральне прибирання",
-          "value": "від 350 PLN",
+          "value": `від ${PRICES.deepCleaning} PLN`,
           "items": [
             "Видалення пилу в усіх доступних місцях",
             "Пилосос, включно з-під ліжка, дивана та шафи",
@@ -307,7 +309,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "Після ремонту",
-          "value": "12,5 PLN / м²",
+          "value": `${_fmt(PRICES.afterRenovation)} PLN / м²`,
           "desc": "Видалення будівельного пилу, очищення всіх доступних поверхонь, підлоги, сантехніки та кухні.",
           "note": "Підсумкова вартість залежить від площі та ступеня забруднення."
         }
@@ -317,32 +319,32 @@ const TRANSLATIONS = {
         {
           "title": "Дивани",
           "items": [
-            { "label": "2-місний", "price": "140 PLN" },
-            { "label": "3-місний", "price": "160 PLN" },
-            { "label": "4-місний", "price": "180 PLN" },
-            { "label": "5–6-місний", "price": "від 220 PLN" }
+            { "label": "2-місний",   "price": `${PRICES.sofa2} PLN` },
+            { "label": "3-місний",   "price": `${PRICES.sofa3} PLN` },
+            { "label": "4-місний",   "price": `${PRICES.sofa4} PLN` },
+            { "label": "5–6-місний", "price": `від ${PRICES.sofa56} PLN` }
           ]
         },
         {
           "title": "Матраци",
           "sub": "один бік",
           "items": [
-            { "label": "Односпальний", "price": "130 PLN" },
-            { "label": "Двоспальний", "price": "230 PLN" }
+            { "label": "Односпальний", "price": `${PRICES.mattressSingle} PLN` },
+            { "label": "Двоспальний",  "price": `${PRICES.mattressDouble} PLN` }
           ]
         },
         {
           "title": "Килими",
           "items": [
-            { "label": "Килим", "price": "13 PLN / м²" },
-            { "label": "Килимове покриття", "price": "12 PLN / м²" }
+            { "label": "Килим",             "price": `${PRICES.carpet} PLN / м²` },
+            { "label": "Килимове покриття", "price": `${PRICES.carpeting} PLN / м²` }
           ]
         },
         {
           "title": "Інші меблі",
           "items": [
-            { "label": "Крісло", "price": "55 PLN" },
-            { "label": "Стілець", "price": "40 PLN" }
+            { "label": "Крісло",  "price": `${PRICES.armchair} PLN` },
+            { "label": "Стілець", "price": `${PRICES.chair} PLN` }
           ]
         }
       ]
@@ -432,22 +434,22 @@ const TRANSLATIONS = {
         {
           "title": "Поддерживающая уборка",
           "text": "Регулярное поддержание чистоты: пыль, полы, сантехника, вынос мусора.",
-          "price": "от 200 PLN"
+          "price": `от ${PRICES.regularCleaning} PLN`
         },
         {
           "title": "Генеральная уборка",
           "text": "Глубокая очистка всего помещения, включая бытовую технику и труднодоступные места.",
-          "price": "от 350 PLN"
+          "price": `от ${PRICES.deepCleaning} PLN`
         },
         {
           "title": "После ремонта",
           "text": "Удаление строительной пыли и загрязнений после ремонтных или строительных работ.",
-          "price": "от 12,5 PLN / м²"
+          "price": `от ${_fmt(PRICES.afterRenovation)} PLN / м²`
         },
         {
           "title": "Химчистка мебели",
           "text": "Диваны, матрасы, ковры, кресла и стулья. Профессиональное оборудование.",
-          "price": "от 40 PLN"
+          "price": `от ${PRICES.chair} PLN`
         }
       ]
     },
@@ -475,7 +477,7 @@ const TRANSLATIONS = {
       "cleaning": [
         {
           "title": "Поддерживающая уборка",
-          "value": "от 200 PLN",
+          "value": `от ${PRICES.regularCleaning} PLN`,
           "items": [
             "Удаление пыли в доступных местах (полки, рамки, розетки, плинтусы, техника, мебель)",
             "Очистка стеклянных и зеркальных поверхностей",
@@ -490,7 +492,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "Генеральная уборка",
-          "value": "от 350 PLN",
+          "value": `от ${PRICES.deepCleaning} PLN`,
           "items": [
             "Удаление пыли во всех доступных местах",
             "Пылесос, включая под кроватью, диваном и шкафом",
@@ -507,7 +509,7 @@ const TRANSLATIONS = {
         },
         {
           "title": "После ремонта",
-          "value": "12,5 PLN / м²",
+          "value": `${_fmt(PRICES.afterRenovation)} PLN / м²`,
           "desc": "Удаление строительной пыли, очистка всех доступных поверхностей, пола, сантехники и кухни.",
           "note": "Итоговая стоимость зависит от площади и степени загрязнения."
         }
@@ -517,32 +519,32 @@ const TRANSLATIONS = {
         {
           "title": "Диваны",
           "items": [
-            { "label": "2-местный", "price": "140 PLN" },
-            { "label": "3-местный", "price": "160 PLN" },
-            { "label": "4-местный", "price": "180 PLN" },
-            { "label": "5–6-местный", "price": "от 220 PLN" }
+            { "label": "2-местный",   "price": `${PRICES.sofa2} PLN` },
+            { "label": "3-местный",   "price": `${PRICES.sofa3} PLN` },
+            { "label": "4-местный",   "price": `${PRICES.sofa4} PLN` },
+            { "label": "5–6-местный", "price": `от ${PRICES.sofa56} PLN` }
           ]
         },
         {
           "title": "Матрасы",
           "sub": "одна сторона",
           "items": [
-            { "label": "Односпальный", "price": "130 PLN" },
-            { "label": "Двуспальный", "price": "230 PLN" }
+            { "label": "Односпальный", "price": `${PRICES.mattressSingle} PLN` },
+            { "label": "Двуспальный",  "price": `${PRICES.mattressDouble} PLN` }
           ]
         },
         {
           "title": "Ковры",
           "items": [
-            { "label": "Ковёр", "price": "13 PLN / м²" },
-            { "label": "Ковролин", "price": "12 PLN / м²" }
+            { "label": "Ковёр",    "price": `${PRICES.carpet} PLN / м²` },
+            { "label": "Ковролин", "price": `${PRICES.carpeting} PLN / м²` }
           ]
         },
         {
           "title": "Другая мебель",
           "items": [
-            { "label": "Кресло", "price": "55 PLN" },
-            { "label": "Стул", "price": "40 PLN" }
+            { "label": "Кресло", "price": `${PRICES.armchair} PLN` },
+            { "label": "Стул",   "price": `${PRICES.chair} PLN` }
           ]
         }
       ]
