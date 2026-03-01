@@ -36,6 +36,28 @@ a{color:inherit}
 .menu a{text-decoration:none;color:rgba(233,240,247,.9)}
 .menu a:hover{color:#fff}
 
+/* ── LANGUAGE SWITCHER ── */
+.lang-switcher{display:flex;gap:4px;align-items:center}
+.lang-btn{
+  padding:4px 6px;border-radius:8px;
+  border:1px solid transparent;
+  background:transparent;
+  font-size:20px;line-height:1;
+  cursor:pointer;
+  opacity:.55;
+  transition:opacity .15s, background .15s, border-color .15s;
+}
+.lang-btn:hover{
+  opacity:.85;
+  background:rgba(255,255,255,.07);
+  border-color:var(--border);
+}
+.lang-btn--active{
+  opacity:1;
+  background:rgba(125,211,252,.12);
+  border-color:rgba(125,211,252,.35);
+}
+
 .burger{
   display:none;
   width:44px;height:40px;border-radius:12px;
@@ -69,9 +91,10 @@ a{color:inherit}
 h1{font-size:44px;line-height:1.1;margin:14px 0 10px}
 .lead{color:rgba(233,240,247,.86);font-size:18px;max-width:52ch}
 
-.cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;align-items:center}
+.cta__phone{font-size:18px;font-weight:600;color:var(--text);letter-spacing:.3px}
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
   padding:12px 16px;border-radius:14px;
   text-decoration:none;border:1px solid var(--border);
   background: linear-gradient(135deg, rgba(125,211,252,.18), rgba(167,243,208,.12));
